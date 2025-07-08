@@ -25,7 +25,7 @@ else
     {
         int heroAttack = attack.Next(1, 11);
         Console.WriteLine($"{player1}, You have {heroStamina} stamina, Would you like to use a weak attack (2 stamina) or a strong attack (5 stamina)");
-        string heroAttackType =  Console.ReadLine();
+        string heroAttackType = Console.ReadLine();
         while (heroAttackType.ToLower() != "weak" && heroAttackType.ToLower() != "strong")
         {
             Console.WriteLine("Could not identify the attack type plaease enter \"weak\" or \"strong\"");
@@ -102,3 +102,5 @@ else
         }
     }
 }
+Console.WriteLine("Game Over! Any key to exit");
+Console.ReadLine();
